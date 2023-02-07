@@ -31,18 +31,14 @@
                       + '\n<scr' + 'ipt src="https://cdn.jsdelivr.net/npm/vue-orgchart/dist/vue-orgchart.min.js"></scr' + 'ipt>'
     var cssResources = '@import url("https://cdn.jsdelivr.net/npm/vue-orgchart/dist/style.min.css");'
     window.$docsify = {
-      toc: {
-         tocMaxLevel: 14,
-         target: 'h2, h3, h4, h5, h6'
-      },
-      alias: {
-        '/.*/_sidebar.md': '/_sidebar.md',
-      },
-      subMaxLevel: 3,
-      sidebarDisplayLevel: 1, // set sidebar display level
+      // toc: { tocMaxLevel: 14, target: 'h2, h3, h4, h5, h6' },
+      // alias: { '/.*/_sidebar.md': '/_sidebar.md', },
+      // subMaxLevel: 3,
+      // sidebarDisplayLevel: 1, // set sidebar display level
       coverpage: true,
-      loadSidebar: true,
-      loadNavbar: true,
+      onlyCover: true,
+      loadSidebar: false,
+      loadNavbar: false,
       repo: 'https://github.com/memoriagame/docs',
       plugins: [
         DemoBoxVue.create(jsResources, cssResources)
